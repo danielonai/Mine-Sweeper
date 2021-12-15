@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initGame()">
+    <div class="main-container">
+        <h1>Minesweeper</h1>
+        <div class="timer">0</div>
+        <div class="game-header-container">
+            <div class="secondary-container safe-click-container">
+                <button class="safeclickb" onclick="safeClick()">Safe Click</button>
+                <div class="safeclick">
+                    <span> 3 more safe clicks </span>
+                </div>
+                <div class="flagcount">.</div>
+            </div>
+            <div class="middle-container">
+                <div class="smiley" onclick="initGame()">😃</div>
+                <div class="lives">'❤❤❤</div>
+            </div>
+            <div class="secondary-container hint-container">
+                <div class="hints" onclick="giveHint()">3
+                    <img class="hint1" src="lightbulboff.png" alt="unused clue">
+                    <img class="hint2" src="lightbulboff.png" alt="unused clue">
+                    <img class="hint3" src="lightbulboff.png" alt="unused clue">
+                </div>
+                <div class="buttons">
+                    <button class=" button easyb" onclick="easyMode()">Easy</button>
+                    <button class=" button mediumb" onclick="mediumMode()">Medium</button>
+                    <button class=" button expertb" onclick="expertMode()">Hard</button>
+                </div>
+            </div>
+        </div>
+        <div class="board-container"></div>
+    </div>
+    <footer class="footer">Made By Daniel Schwartz©</footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
