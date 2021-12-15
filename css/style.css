@@ -43,7 +43,6 @@ h1 {
 
 .hint-container {
     top: 55px;
-
 }
 
 .middle-container {
@@ -130,7 +129,6 @@ h1 {
 .cell:hover {
     box-shadow: 0 0 0 2px transparent;
     background-color: rgb(185, 189, 197);
-
 }
 
 .shown,
@@ -167,9 +165,9 @@ h1 {
     text-align: center;
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
     body {
-        padding: 0 20px 0 
+        padding: 0 20px 0;
     }
 
     .board {
@@ -178,7 +176,23 @@ h1 {
     }
 
     .button {
-       width: 50px;
-       padding: 0;
+        width: 35px;
+        padding: 0;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .hint-container {
+        padding-right: 30px;
+    }
+
+    .lives {
+        font-size: 20px;
+    }
+
+    .hints {
+        font-size: 20px;
     }
 }

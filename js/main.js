@@ -392,7 +392,7 @@ function safeClick() {
     setTimeout(function () {
         elSafeCell.classList.remove('safeclicked');
         elSafeCell.innerText = EMPTY;
-    }, 2500)
+    }, 1000)
     var elSafeClick = document.querySelector('.safeclick');
     gLevel.safeClicks--;
     elSafeClick.innerText = `${gLevel.safeClicks} more safe clicks`
