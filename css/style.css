@@ -173,6 +173,7 @@ h1 {
     .board {
         width: 360px;
         height: 360px;
+        margin: 40px 20px 0 ;
     }
 
     .button {
